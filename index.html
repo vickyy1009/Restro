@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"/>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <span class="logo">RB</span>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hidemenu()"></i>
+                <ul> 
+                <li><a href="">home</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">menu</a></li>
+                <li><a href="">contact</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars" onclick="showmenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>restaurant & bar</h1>
+            <h3>the best night you will ever have.</h3>
+            <a href="" class="hit-me">hit me to know more</a>
+        </div>
+    </section>
+
+    <!-- ########about######### -->
+     <section class="about">
+        <h1>About us</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing <br>
+         Ipsam modi sunt nulla recusandae corrupti ad suscipit maiores sapiente quaerat quia?</p>
+        <div class="row">
+            <div class="brands">
+                <h3>brands</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo illum, exercitationem voluptates fugiat magnam dicta a consequatur eos maiores porro itaque explicabo placeat, eius doloremque. Aut consectetur natus soluta voluptates.</p>
+            </div>
+            <div class="brands">
+                <h3>cocktail</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo illum, exercitationem voluptates fugiat magnam dicta a consequatur eos maiores porro itaque explicabo placeat, eius doloremque. Aut consectetur natus soluta voluptates.</p>
+            </div>
+            <div class="brands">
+                <h3>party</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo illum, exercitationem voluptates fugiat magnam dicta a consequatur eos maiores porro itaque explicabo placeat, eius doloremque. Aut consectetur natus soluta voluptates.</p>
+            </div>
+        </div>
+        
+        </section>
+
+    <!-- menu -->
+     <section class="menu">
+        <h1>menu items</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="row">
+            <div class="food">
+                <img src="./assets/veg.jpg" alt="veg food">
+                <div class="layer">
+                    <h3>VEG</h3>
+                </div>
+            </div>
+            <div class="food">
+                <img src="./assets/non-veg.jpg" alt="non-veg food">
+                <div class="layer">
+                    <h3>NON-VEG</h3>
+                </div>
+            </div>
+            <div class="food">
+                <img src="./assets/drinks.jpg" alt="drinks">
+                <div class="layer">
+                    <h3>DRINKS</h3>
+                </div>
+            </div>
+        </div>
+     </section>
+     
+     <!-- contact -->
+      <section class="cta">
+        <h1>contact us anywhere from the world</h1>
+        <a href="" class="hit-me">CONTACT</a>
+      </section>
+
+    <!-- footer -->
+    <section class="footer">
+        <div class="media">
+            <h4>Support Us</h4>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quibusdam ex <br>
+                 dolorum dignissimos neque quaerat architecto, facere in vel eveniet.</p>
+                 <p>Made <i class="fa-regular fa-heart"></i> By Vignesh</i></p>
+        </div>
+    </section>
+<!-- ############java script ############## -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showmenu(){
+            navLinks.style.right = "0";
+            
+        }
+        function hidemenu(){
+            navLinks.style.right = "-200px";
+            
+        }
+    </script>
+</body>
+</html>
